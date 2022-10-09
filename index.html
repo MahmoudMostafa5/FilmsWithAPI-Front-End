@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories of Films</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+
+<div id="sideBar">
+    <div id="sumarryBox">
+        <a class="nav-link text-light" onclick="getFilm()" id="#nowPlaying">Now Playing</a>
+        <a class="nav-link text-light" href="javascript:void(0);" onclick="getPopularFilm()">Popular</a>
+        <a class="nav-link text-light" onclick="getTopRatedFilm()" id="#topRated">Top Rated</a>
+        <a class="nav-link text-light" onclick="getTrendFilm()" id="#trending">Tranding</a>
+        <a class="nav-link text-light" onclick="getupcomingFilm()" id="#upComing">Upcoming</a>
+        <a class="nav-link text-light" href="#contact">Contact</a>
+        <div class="icon row">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+        </div>
+        <p class="text-muted mt-2">Copyright Â© 2019 All Rights Reserved.</p>
+    </div>
+
+    <div id="sideBarToggle">
+        <img id="img" src="images/logo.png" alt="">
+        <i id="toggle" class="fas fa-align-justify d-flex align-items-center"></i>
+        <i id="close" class="far fa-times-circle fa-sm d-none"></i>
+        <i class="fas fa-globe ffff"></i>
+        <i class="fas fa-share-alt pt-2"></i>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center" id="search">
+    <input class="form-control" id="firstSearch" placeholder="get movies by word...">
+    <input class="form-control" id="secondSearch" placeholder="search...">
+</div>
+
+<div class="container" id="films">
+    <div class="row" id="row">
+
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2 class="text-light">ContacUs...</h2>
+    <div class="row my-5">
+
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+            <div id="nameEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>Your Name is inValid</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+            <div id="emailEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>Enter Valid Email</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input type="number" class="form-control" id="phone" placeholder="Enter Phone">
+            <div id="phoneEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>Enter Valid Phone</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input type="number" class="form-control" id="age" placeholder="Enter Age">
+            <div id="ageEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>Enter Valid Age</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input type="password" class="form-control" id="pass" placeholder="Enter Password">
+            <div id="passEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <input type="password" class="form-control" id="rePass" placeholder="Enter RePassword">
+            <div id="repassEntered" class="d-none alert alert-danger my-2 py-0">
+                <p>entre valid Repassword</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="button mb-3 ">
+        <button type="button" disabled class="btn btn-outline-danger">Submit</button>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
